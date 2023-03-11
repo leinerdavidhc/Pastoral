@@ -2,6 +2,8 @@
 import React from "react";
 import Header from "../components/Header";
 import Slider from "../components/Inicio/Slider";
+import Main from "../components/Inicio/Main";
+import ToogleSocial from "../components/Tooglesocial";
 import '../styles/Inicio.css'
 
 function Inicio() {
@@ -9,6 +11,8 @@ function Inicio() {
     <div className="contenedor">
       <Header />
       <Slider/>
+      <Main/>
+      <ToogleSocial/>
     </div>
   );
 }

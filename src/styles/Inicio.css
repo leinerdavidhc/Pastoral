@@ -1,34 +1,47 @@
-.Slider{
-    grid-area: Slider;
-    background-color: #5ECDE1;
+.Slider {
+  margin-top:102px;
+  grid-area: Slider;
+  background: transparent linear-gradient(180deg, #5ecde1 0%, #64e9ff 100%) 0%
+    0%;
+  opacity: 0.87;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
 }
 
-.toogleSocial a{
-    transition: all .5s;
-    font-size: 18px;
-    transform-origin: left;
+.SliderInfo a{
+  color:#771611;
+  font-weight: bold;
+}
+.toogleSocial{
+  top: 550px;
 }
 
-.toogleSocial a:nth-child(1):hover{
-    color: #1778f2;
-    transform: scale(1.1);
-}
-.toogleSocial a:nth-child(2):hover{
-    color: #f58529;
-    transform: scale(1.1);
-}
-.toogleSocial a:nth-child(3):hover{
-    color: #ff0000;
-    transform: scale(1.1);
-}
-.toogleSocial a:nth-child(4):hover{
-    color: #08a0e9;
-    transform: scale(1.1);
+.toogleSocial a {
+  transition: all 0.5s;
+  font-size: 18px;
+  transform-origin: left;
 }
 
-.toogleSocial span{
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-size: 14px;
-    font-weight: 500;
+.toogleSocial a:nth-child(1):hover {
+  color: #1778f2;
+  transform: scale(1.1);
+}
+.toogleSocial a:nth-child(2):hover {
+  color: #f58529;
+  transform: scale(1.1);
+}
+.toogleSocial a:nth-child(3):hover {
+  color: #ff0000;
+  transform: scale(1.1);
+}
+.toogleSocial a:nth-child(4):hover {
+  color: #08a0e9;
+  transform: scale(1.1);
+}
+
+.toogleSocial span {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 14px;
+  font-weight: 500;
 }

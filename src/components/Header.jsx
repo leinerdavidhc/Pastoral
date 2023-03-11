@@ -12,7 +12,7 @@ function Header() {
     setActiveLink(routeName);
   };
   return (
-    <header className="HeaderPublic">
+    <header className="HeaderPublic fixed top-0 left-0 z-50">
       <div className="navMobile flex justify-between items-center md:hidden">
         <button className={btnBuerger} onClick={()=>{
           setClicBurger(!clicBurger)
@@ -28,7 +28,9 @@ function Header() {
           <div className="animacionBurger"></div>
           <div className="animacionBurger"></div>
         </button>
+      <Link to="/">
       <img src="src/assets/LOGO-PASTORAL-HORIZONTAL.png" alt="Logo-Pastoral-horizontal"  className="h-11"/>
+      </Link>
       </div>
       <nav className={NavPublic}>
 
@@ -83,7 +85,9 @@ function Header() {
             <Link to="/Convocatorias">Convocatoria</Link>
           </li>
         </ul>
-        <img src="src/assets/LOGO-PASTORAL-HORIZONTAL.png" alt="Logo-Pastoral-horizontal"  className="md:h-32 h-24 order-1 md:order-2 self-center"/>
+        <Link to="/" className="order-1">
+        <img src="src/assets/LOGO-PASTORAL-HORIZONTAL.png" alt="Logo-Pastoral-horizontal"  className="md:h-20 h-24 md:order-2 self-center"/>
+        </Link>
       </nav>
     </header>
   );

@@ -1,26 +1,31 @@
 import React from "react";
+import Carusel from "./Carusel";
 
 function Slider() {
+  const images = [
+    "https://i.ibb.co/ncrXc2V/1.png",
+    "https://i.ibb.co/B3s7v4h/2.png",
+    "https://i.ibb.co/XXR8kzF/3.png",
+    "https://i.ibb.co/yg7BSdM/4.png",
+  ];
   return (
-    <div className="Slider flex relative gap-2.5 p-2.5">
-      <div className="SliderInfo w-2/4 h-full">1</div>
-      <div className="caruselSlider w-2/4 h-full">2</div>
-      <div className="toogleSocial fixed z-50 right-0 m-5 flex flex-col gap-2">
-        <a href="#">
-          <i class="fa-brands fa-square-facebook"></i>
+    <div className="Slider flex md:flex-row flex-col gap-2.5 p-4 md:h-80 h-max md:mt-24 mt-16">
+      <div className="SliderInfo md:w-2/4 w-full h-full flex flex-col gap-3 p-2 justify-center">
+        <p className="text-black font-semibold text-4xl w-4/5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nihil?
+        </p>
+        <a
+          href="#"
+          className="text-xl flex items-center justify-center w-max gap-2"
+        >
+          Conoce Más <i className="fa-solid fa-arrow-right"></i>
         </a>
-        <a href="#">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="#">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a href="#">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <span>-</span>
-        <span>Siguenos</span>
       </div>
+      <Carusel>
+        {images.map((url,index)=>(
+          <img src={url} key={index} className="object-contain w-full h-full" />
+        ))}
+      </Carusel>
     </div>
   );
 }

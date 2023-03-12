@@ -1,5 +1,5 @@
 .Slider {
-  margin-top:102px;
+  margin-top: 102px;
   grid-area: Slider;
   background: transparent linear-gradient(180deg, #5ecde1 0%, #64e9ff 100%) 0%
     0%;
@@ -8,11 +8,11 @@
   -webkit-backdrop-filter: blur(50px);
 }
 
-.SliderInfo a{
-  color:#771611;
+.SliderInfo a {
+  color: #771611;
   font-weight: bold;
 }
-.toogleSocial{
+.toogleSocial {
   top: 550px;
 }
 
@@ -44,4 +44,71 @@
   transform: rotate(180deg);
   font-size: 14px;
   font-weight: 500;
+}
+
+.Main {
+  width: 100%;
+  height:max-content;
+  background-color: #d3dfdd;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2368323d' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.MainGrid{
+  width: 100%;
+  height:100%;
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-rows: repeat(5,200px);
+  gap: 10px;
+}
+
+.itemProyecto{
+  background-color:#f58529;
+  border-radius:16px;
+  overflow: hidden;
+}
+
+.itemProyecto-Info:nth-child(1){
+  grid-row: span 1 / span 1;
+}
+
+.itemProyecto-Info{
+  border-top-right-radius:16px;
+  border-bottom-left-radius:16px;
+  width: 80%;
+}
+
+.itemProyecto:nth-child(1) div{
+  background: rgb(72,104,167);
+  background: linear-gradient(90deg, rgba(72,104,167,1) 0%, rgba(72,104,167,0.50) 100%);
+}
+
+.itemProyecto:nth-child(2) div{
+  background: #68323D;
+  background: linear-gradient(90deg, #68323D 0%, #68323D80 100%);
+}
+
+.itemProyecto:nth-child(3) div{
+  background:#5ECDE1;
+  background: linear-gradient(90deg, #5ECDE1 0%, #5ECDE180 100%);
+}
+
+.itemProyecto:nth-child(4) div{
+  background: #707070;
+  background: linear-gradient(90deg, #771611 0%, #77161180 100%);
+}
+
+.itemProyecto:nth-child(5) div{
+  background: #771611;
+  background: linear-gradient(90deg, #707070 0%, #70707080 100%);
+}
+
+@media screen and (min-width: 768px) {
+  .MainGrid{
+    grid-template-columns:repeat(2,minmax(200px,1fr));
+    grid-template-rows: repeat(3,200px);
+  }
+  .itemProyecto:nth-child(1){
+    grid-row: span 2 / span 2;
+  }
+  
 }

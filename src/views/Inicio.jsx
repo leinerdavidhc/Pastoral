@@ -2,6 +2,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Slider from "../components/Inicio/Slider";
+import EnacabezadoMain from "../components/Inicio/EncabezdoMain";
 import Main from "../components/Inicio/Main";
 import ToogleSocial from "../components/Tooglesocial";
 import Footer from '../components/Footer'
@@ -13,6 +14,7 @@ function Inicio() {
     <div className="contenedor">
       <Header />
       <Slider/>
+      <EnacabezadoMain/>
       <Main/>
       <ToogleSocial/>
       <Aside/>

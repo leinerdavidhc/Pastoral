@@ -27,7 +27,7 @@ function Footer() {
             <div className="item">#La Solidaridad</div>
           </div>
         </div>
-        <div className="copyright text-center">
+        <div className="copyright text-center text-xs">
           <i className="fa-regular fa-copyright"></i>2023 SECRETARIADO DE PASTORAL
           SOCIAL RIOHACHA, Todo Los Derechos Reservados
         </div>

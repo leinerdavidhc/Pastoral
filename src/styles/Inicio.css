@@ -62,7 +62,7 @@
 }
 
 .itemProyecto{
-  background-color:#f58529;
+  background-color:#707070;
   border-radius:16px;
   overflow: hidden;
 }
@@ -100,6 +100,28 @@
 .itemProyecto:nth-child(5) div{
   background: #771611;
   background: linear-gradient(90deg, #707070 0%, #70707080 100%);
+}
+
+.Aside .aliados{
+  height:140px;
+  width: 140px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #707070;
+  display: grid;
+  place-items: center;
+  transition: all .5s ease-in-out;
+}
+
+.Aside .aliados img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.Aside .aliados:hover{
+  transform: scale(1.04);
 }
 
 @media screen and (min-width: 768px) {

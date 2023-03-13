@@ -25,11 +25,14 @@ function Slider() {
           Conoce Más <i className="fa-solid fa-arrow-right"></i>
         </a>
       </div>
-      <Carusel>
+     <div className="Carusel-Slider md:w-2/4 w-full">
+      <h3 className="text-xl font-bold text-center">Actualidad</h3>
+     <Carusel>
         {images.map((url,index)=>(
           <img src={url} key={index} className="object-contain w-full h-full" />
         ))}
       </Carusel>
+     </div>
     </div>
   );
 }

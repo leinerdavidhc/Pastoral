@@ -19,7 +19,7 @@ export default function Carusel({
       return () => clearInterval(interval);
     }, [curr, images]);
   return (
-    <div className="overflow-hidden relative md:w-2/4 w-full rounded-2xl md:h-full h-64">
+    <div className="overflow-hidden relative rounded-2xl md:h-4/5 h-64">
       <div
         className="flex transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${curr * 100}%)` }}

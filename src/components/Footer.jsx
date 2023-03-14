@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="Footer w-full h-max p-2.5 flex md:flex-row flex-col md:items-center relative md:gap-0 gap-4">
+    <footer className="Footer w-full h-max p-2.5 flex md:flex-row flex-col md:items-center relative md:gap-0 gap-4 bottom-0">
       <div className="footer-Contactos flex flex-col gap-2 text-sm">
         <span>
           <i className="fa-solid fa-location-dot"></i> Calle 16B #11A-68

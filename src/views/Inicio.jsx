@@ -6,8 +6,8 @@ import EnacabezadoMain from "../components/Inicio/EncabezdoMain";
 import Main from "../components/Inicio/Main";
 import ToogleSocial from "../components/Tooglesocial";
 import Footer from '../components/Footer'
-import Aside from "../components/Inicio/Aside";
 import '../styles/Inicio.css'
+import Aside from "../components/Inicio/Aside";
 
 function Inicio() {
   return (
@@ -16,8 +16,8 @@ function Inicio() {
       <Slider/>
       <EnacabezadoMain/>
       <Main/>
-      <ToogleSocial/>
       <Aside/>
+      <ToogleSocial/>
       <Footer/>
     </div>
   );

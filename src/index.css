@@ -128,3 +128,21 @@ li.disable {
     transform: translate3d(0,-70%,0);
   }
 }
+
+.skeleton{
+  background-color: #ccc;
+  animation: skeleton 2s infinite ease;
+}
+
+@keyframes skeleton {
+  0%{
+    background-color: #ccc;
+  }
+  50%{
+    background-color: #eee;
+  }
+
+  100%{
+    background-color: #ccc;
+  }
+}

@@ -1,0 +1,89 @@
+.contenedor-Nosotros{
+    background: #d3dfdd 0% 0%;
+    opacity: 1;
+}
+.Main-Nosotros{
+    margin-top: 102px;
+    height: 100%;
+    width: 100%;
+}
+
+.infoSepas h1{
+    color:#771611;
+}
+.AcercaDE section{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.AcercaDE section h3{
+    color: black;
+    font-size:24px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.AcercaDE section p{
+    font-size: 16px;
+    text-align:justify;
+}
+
+.AcercaDE section ul{
+    list-style:disc;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+    padding-left: 25px;
+}
+
+.AcercaDE section i{
+    font-size: 32px;
+}
+
+.nuestro{
+    color: #771611;
+}
+
+.img-personal {
+    width: 70%;
+    height:350px;
+}
+.Slider-Aliados{
+    width:650px;
+    padding: 40px 20px;
+}
+
+.aliados{
+    height:200px;
+    width: 200px;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.aliados:hover{
+    transform: scale(1.04);
+    box-shadow: 1px 2px 15px #1818186e;
+}
+
+
+.aliados img{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .Slider-Aliados{
+        width:300px;
+    }
+    .aliados{
+        width:280px;
+    }
+    .img-personal {
+        width: 100%;
+    }
+  }
